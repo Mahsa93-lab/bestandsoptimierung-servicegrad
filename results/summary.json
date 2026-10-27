@@ -1,0 +1,39 @@
+{
+  "skus": 1200,
+  "artikel": 400,
+  "niederlassungen": 3,
+  "simulierte_tage": 312,
+  "referenz": {
+    "regel": "alle Artikel alpha = 0.975",
+    "lieferfaehigkeit": 0.9950200850468542,
+    "defektquote_positionen": 0.007547805378643635,
+    "kapitalbindung_eur": 937146.242948718
+  },
+  "optimiert_gleiches_budget": {
+    "lieferfaehigkeit": 0.9986755962595073,
+    "defektquote_positionen": 0.0023618716363892345,
+    "kapitalbindung_eur": 923867.7700000003,
+    "defekte_weniger": 0.6870783601453074
+  },
+  "optimiert_gleiche_lieferfaehigkeit": {
+    "budget_wie_alpha": 0.95,
+    "lieferfaehigkeit": 0.9968576462090087,
+    "kapitalbindung_eur": 866096.5462820515,
+    "kapital_weniger": 0.07581495118959192
+  },
+  "sicherheitsbestand_kapital": {
+    "0.8": 164068.95115115613,
+    "0.85": 202046.3985092074,
+    "0.9": 249830.69915239784,
+    "0.95": 320654.2309126791,
+    "0.975": 382083.08251964767,
+    "0.99": 453507.3979612652,
+    "0.995": 502142.2883825895,
+    "0.999": 602422.0315045632
+  },
+  "anteil_spezialpraeparate_am_sicherheitskapital_einheitlich": 0.5793329675390659,
+  "lieferfaehigkeit_spezialpraeparate": {
+    "einheitlich": 0.9821300929235168,
+    "optimiert": 0.9671193709792709
+  }
+}

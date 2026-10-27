@@ -1,0 +1,16 @@
+[project]
+name = "bestandsoptimierung-servicegrad"
+version = "0.1.0"
+description = "ABC-XYZ, Sicherheitsbestand und Kapital vs. Lieferfähigkeit im Pharmagroßhandel (synthetische Daten)"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

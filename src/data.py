@@ -46,14 +46,14 @@ class Dataset:
 def workdays(start: str = "2024-10-28", weeks: int = 104) -> pd.DatetimeIndex:
     """Arbeitstage Montag bis Samstag (ohne Feiertage, zur Vereinfachung)."""
     all_days = pd.date_range(start, periods=weeks * 7, freq="D")
-    return all_days[all_days.dayofweek < WORKDAYS_PER_WEEK]
+    return all_days[all_days.day_of_week < WORKDAYS_PER_WEEK]
 
 
 def generate(seed: int = 42, weeks: int = 104) -> Dataset:
     rng = np.random.default_rng(seed)
     days = workdays(weeks=weeks)
     month_idx = days.month.to_numpy() - 1
-    weekday_idx = days.dayofweek.to_numpy()
+    weekday_idx = days.day_of_week.to_numpy()
 
     rows, means = [], []
     article_id = 0

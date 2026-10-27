@@ -18,7 +18,7 @@ from src.simulate import simulate
 def test_workdays_are_monday_to_saturday():
     days = workdays(weeks=2)
     assert len(days) == 2 * WORKDAYS_PER_WEEK
-    assert set(days.dayofweek) == set(range(6))
+    assert set(days.day_of_week) == set(range(6))
 
 
 def test_generate_is_reproducible_and_non_negative():
